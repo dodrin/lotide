@@ -8,14 +8,17 @@ const assertEqual = function(actual, expected) {
 };
 
 //FUNCTION IMPLEMENTATION
-const eqArrays = function(array1, array2) {
+const eqArrays = function(arr1, arr2) {
+  if (arr1.length !== arr2.length) {
+    return false;
+  }
   let result = 0;
-  for (let i = 0; i < array1.length; i++) {
-    if(array1[i] === array2[i]) {
+  for (let i = 0; i < arr1.length; i++) {
+    if(arr1[i] === arr2[i]) {
       result ++;
     }
   }
-  if (result !== array1.length) {
+  if (result !== arr1.length) {
     return false;
   } else {
     return true;
