@@ -16,6 +16,7 @@ const countOnly = function (allItems, itemsToCount) {
   for (const item of allItems) {
     if (itemsToCount[item]) {
       if (results[item]) {
+        //result[item] is not an array element but object value
         results[item] += 1;
       } else {
         results[item] = 1;
