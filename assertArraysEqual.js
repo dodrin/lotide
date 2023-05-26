@@ -1,5 +1,5 @@
 //FUNCTION IMPLEMENTAION
-const asserArraysEqual = function(arr1, arr2) {
+const assertArraysEqual = function(arr1, arr2) {
   let failMsg = `😭😭Assertion Failed: ${arr1} !== ${arr2}`;
   let passMsg = `✅✅✅Assertion Passed: ${arr1} === ${arr2}`;
 
