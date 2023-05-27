@@ -1,5 +1,5 @@
 //FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
+const asserEqual = (actual, expected) => {
   if (actual !== expected) {
     console.log(`😭Assertion Failed: ${actual} !== ${expected}`);
   } else {
@@ -9,6 +9,6 @@ const assertEqual = function(actual, expected) {
 
 //TEST CODE
 assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual('cat', 'cat');
-assertEqual(1, 1);
-assertEqual(4, 8);    
+asserEqual('cat', 'cat');
+asserEqual(1, 1);
+asserEqual(4, 8);    
