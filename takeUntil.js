@@ -33,6 +33,12 @@ const takeUntil = function(array, callback) {
   } return result;
 }
 
+/*
+callback = function(x) {
+  x === ","
+}
+*/
+
 //TEST CODE
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 const expected1 = [1, 2, 5, 7, 2];
