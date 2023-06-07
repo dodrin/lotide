@@ -1,9 +1,9 @@
 const middle = (arr) => {
   let result = [];
   let mid;
-
+  
   if (arr.length < 3) {
-    return result;
+    return [];
   }
 
   if (arr.length % 2 === 0) {
@@ -13,7 +13,9 @@ const middle = (arr) => {
     return result;
   } else {
     mid = Math.round(arr.length / 2);
-    result.push(arr[mid]);
+    result.push(arr[mid - 1]);
     return result;
   }
 };
+
+module.exports = middle;
