@@ -26,7 +26,6 @@ const asserEqual = (actual, expected) => {
 // 1. Returns true if both objects have identical keys with identical values.
 // 2. Otherwise you get back a big fat false!
 const eqObjects = function (object1, object2) {
-  //array of keys of each objects
   const key1 = Object.keys(object1);
   const key2 = Object.keys(object2);
 
@@ -37,12 +36,19 @@ const eqObjects = function (object1, object2) {
 
   //2. the value for each key in one object is the same as the value for that same key in the other object
   for (const key of key1) {
+    
     // set names to the values of each object
     let value1 = object1[key];
     let value2 = object2[key];
+
     //if value is array can't be simply compared hence use eqArrays
     if (Array.isArray(value1) && Array.isArray(value2)) {
-      return eqArrays(value1, value2);
+      return eqArrays(value1, value2)
+    } 
+    
+    //if valuee is object, recursion
+    if (typeof value1 === "object" && typeof value2 === "object") {
+        eqObjects(value1, value2);
     }
 
     //Otherwise just simply compare the value
@@ -88,3 +94,7 @@ asserEqual(
   eqObjects(multiColorShirtObject, longSleeveMulticolorShirtObject),
   false
 );
+
+console.log(eqObjects({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }));
+console.log(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }));
+console.log(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 }));
