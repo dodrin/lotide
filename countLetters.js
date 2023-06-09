@@ -1,15 +1,3 @@
-//Copy asserEqual
-/*
-const assertEqual = function(actual, expected) {
-  if (actual !== expected) {
-    console.log(`😭Assertion Failed: ${actual} !== ${expected}`);
-  } else {
-    console.log(`✅Assertion Passed: ${actual} === ${expected}`);
-  }
-};
-*/
-
-//FUNCTION IMPLEMENTATION
 const countLetters = (str) => {
   const result = {};
   for (const char of str) {
@@ -24,8 +12,5 @@ const countLetters = (str) => {
       }
     }
   }
-  console.log(result);
+  return result;
 };
-
-//TEST CODE
-countLetters("lighthouse in the house");
