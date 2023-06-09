@@ -1,4 +1,3 @@
-//FUNCTION IMPLEMENTATION
 const letterPositions = (sentence) => {
   const result = {};
   for (let i = 0; i < sentence.length; i++) {
@@ -13,8 +12,5 @@ const letterPositions = (sentence) => {
   }
   return result;
 };
-
-//TEST CODE
-// assertArraysEqual(letterPositions("hello").e, [1]);
 
 module.exports = letterPositions;
