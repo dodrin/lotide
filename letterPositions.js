@@ -15,4 +15,6 @@ const letterPositions = (sentence) => {
 };
 
 //TEST CODE
-assertArraysEqual(letterPositions("hello").e, [1]);
+// assertArraysEqual(letterPositions("hello").e, [1]);
+
+module.exports = letterPositions;
