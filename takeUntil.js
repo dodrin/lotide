@@ -1,22 +1,4 @@
-//COPY assertArraysEqual.js
-const assertArraysEqual = function(arr1, arr2) {
-  let failMsg = `😭😭Assertion Failed: ${arr1} !== ${arr2}`;
-  let passMsg = `✅✅✅Assertion Passed: ${arr1} === ${arr2}`;
-
-  if (arr1.length !== arr2.length) {
-    console.log(failMsg);
-    return false;
-  }
-  
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      console.log(failMsg);
-      return false;
-    }
-  }
-  console.log(passMsg)
-  return true;
-};
+const assertArraysEqual = require("./assertArraysEqual");
 
 //FUNCTION IMPLEMENTATION
 const takeUntil = function(array, callback) {
