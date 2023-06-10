@@ -22,7 +22,7 @@ const obj = {
 
 describe("#countOnly", () => {
   it(`returns {Jason: 1} for {Jason: true}`, () => {
-    assert.deepEqual(countOnly(firstNames, {Jason: true}), { Jason: 1 });
+    assert.deepEqual(countOnly(firstNames, { Jason: true }), { Jason: 1 });
   });
 
   it(`returns undefined for obj.Karima`, () => {
@@ -30,8 +30,8 @@ describe("#countOnly", () => {
   });
 
   it(`returns {Fang: 2} for obj.Fang`, () => {
-    assert.deepEqual(countOnly(firstNames, {Fang: true}), {Fang: 2});
-  })
+    assert.deepEqual(countOnly(firstNames, { Fang: true }), { Fang: 2 });
+  });
 
   it(`returns undefined for obj.Agouhanna`, () => {
     assert.deepEqual(countOnly(firstNames, obj.Agouhanna), {});
