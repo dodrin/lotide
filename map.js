@@ -5,8 +5,6 @@ const assertArraysEqual = require("./assertArraysEqual");
 // 2. A callbac function
 // The map function will return a new array based on the results of the callbak function.
 
-const words = ["mouse", "bull", "tiger", "rabbit", "dragon", "snake", "horse", "sheep", "monkey", "hen", "dog", "pig"];
-
 const map = function(array, callback) {
   const results = [];
   for (let item of array) {
@@ -14,7 +12,9 @@ const map = function(array, callback) {
  }
  return results;
 };
-const result = map(words, word => word[0]);
 
-const expected = ['m', 'b', 't', 'r', 'd', 's', 'h', 's', 'm', 'h', 'd', 'p'];
-assertArraysEqual(result, expected);
+//TEST CODE
+// const words = ["mouse", "bull", "tiger", "rabbit", "dragon", "snake", "horse", "sheep", "monkey", "hen", "dog", "pig"];
+// const result = map(words, word => word[0]);
+// const expected = ['m', 'b', 't', 'r', 'd', 's', 'h', 's', 'm', 'h', 'd', 'p'];
+// assertArraysEqual(result, expected);

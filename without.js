@@ -12,11 +12,10 @@ const without = (sourse, itemsToRemove) => {
   }  return resultToBE;
 };
 
+// //TEST CASES
+// console.log(without([1, 2, 3], [1]));
+// console.log(without(["1", "2", "3"], [1, 2, "3"]));
+// console.log(without([2, 5, 6], []));
 
-//TEST CASES
-console.log(without([1, 2, 3], [1]));
-console.log(without(["1", "2", "3"], [1, 2, "3"]));
-console.log(without([2, 5, 6], []));
-
-const words = ["hello", "world", "lighthouse"];
-console.log(without(words, ["lighthouse"]));
+// const words = ["hello", "world", "lighthouse"];
+// console.log(without(words, ["lighthouse"]));
