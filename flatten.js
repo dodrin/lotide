@@ -10,3 +10,5 @@ const flatten = (inputArr) => {
     }
   } return result;
 }
+
+module.exports = flatten;
