@@ -12,6 +12,6 @@ const assertObjectsEqual = (actual, expected) => {
 };
 
 //TEST CODE
-const shirtobject = {color: "red", size: "medium"};
-const anotherShirtObject = {size: "medium", color: "red"};
-assertObjectsEqual(shirtobject, anotherShirtObject);
+// const shirtobject = {color: "red", size: "medium"};
+// const anotherShirtObject = {size: "medium", color: "red"};
+// assertObjectsEqual(shirtobject, anotherShirtObject);
