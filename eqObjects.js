@@ -15,8 +15,8 @@ const eqObjects = function (object1, object2) {
   //2. the value for each key in one object is the same as the value for that same key in the other object
   for (const key of key1) {
     // set names to the values of each object
-    let value1 = object1[key];
-    let value2 = object2[key];
+    const value1 = object1[key];
+    const value2 = object2[key];
 
     //if value is array can't be simply compared hence use eqArrays
     if (Array.isArray(value1) && Array.isArray(value2)) {
