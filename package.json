@@ -2,7 +2,7 @@
   "name": "@indrn/lotide",
   "version": "1.0.2",
   "description": "A mini clone of Lodash library for lighthouse labs bootcamp",
-  "main": "assertArraysEqual.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
