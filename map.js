@@ -18,3 +18,5 @@ const map = function(array, callback) {
 // const result = map(words, word => word[0]);
 // const expected = ['m', 'b', 't', 'r', 'd', 's', 'h', 's', 'm', 'h', 'd', 'p'];
 // assertArraysEqual(result, expected);
+
+module.exports = map;
