@@ -1,13 +1,8 @@
 const assertArraysEqual = function(arr1, arr2) {
-  let failMsg = `😭😭Assertion Failed: ${arr1} !== ${arr2}`;
-  let passMsg = `✅✅✅Assertion Passed: ${arr1} === ${arr2}`;
+  const failMsg = `😭😭Assertion Failed: ${arr1} !== ${arr2}`;
+  const passMsg = `✅✅✅Assertion Passed: ${arr1} === ${arr2}`;
 
-  if (arr1 === undefined || arr2 === undefined) {
-    console.log(failMsg);
-    return false;
-  }
-
-  if (arr1.length !== arr2.length) {
+  if (arr1 === undefined || arr2 === undefined || arr1.length !== arr2.length) {
     console.log(failMsg);
     return false;
   }
