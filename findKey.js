@@ -28,3 +28,5 @@ const findKey = (obj, callback) => {
 //   findKey(testobj, (x) => x.stars === 2),
 //   "noma"
 // );
+
+module.exports = findKey;
