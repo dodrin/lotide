@@ -1,5 +1,5 @@
 const flatten = (inputArr) => {
-  let result = [];
+  const result = [];
   for (let i = 0; i < inputArr.length; i++) {
     if (!(Array.isArray(inputArr[i]))) {
       result.push(inputArr[i]);
