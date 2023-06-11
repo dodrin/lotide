@@ -20,7 +20,9 @@ const eqObjects = function (object1, object2) {
 
     //if value is array can't be simply compared hence use eqArrays
     if (Array.isArray(value1) && Array.isArray(value2)) {
-      return eqArrays(value1, value2);
+      if (!eqArrays(value1, value2)) {
+        return false;
+      }
     }
 
     if (typeof value1 === "object" && typeof value2 === "object") {
