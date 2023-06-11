@@ -1,5 +1,5 @@
 const middle = (arr) => {
-  let result = [];
+  const result = [];
   let mid;
   
   if (arr.length < 3) {
