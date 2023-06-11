@@ -19,3 +19,4 @@ const without = (sourse, itemsToRemove) => {
 
 // const words = ["hello", "world", "lighthouse"];
 // console.log(without(words, ["lighthouse"]));
+module.exports = without;

@@ -36,3 +36,5 @@ callback = function(x) {
 // const results2 = takeUntil(data2, x => x === ',');
 // console.log(results2);
 // assertArraysEqual(expected2, results2);
+
+module.exports = takeUntil;
