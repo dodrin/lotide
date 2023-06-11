@@ -1,6 +1,6 @@
 {
   "name": "@indrn/lotide",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A mini clone of Lodash library for lighthouse labs bootcamp",
   "main": "index.js",
   "directories": {
