@@ -1,12 +1,12 @@
 const assertArraysEqual = require("./assertArraysEqual");
-
 //parameter 'array' takes arrays, 'callback' takes callback function 
+//if the callback function returns a truthy value when invoked with the current item,
+//it immediately return result array and finishes loop.
+//otherwise the current item is added into result array
 const takeUntil = function(array, callback) {
   const result = [];
   for (const item of array) {
-    //if the callback function returns a truthy value when invoked with the current item,
-    //it immediately return result array and finishes loop.
-    //otherwise the current item is added into result array
+    
     if(callback(item)) {
       return result;
     } else {
