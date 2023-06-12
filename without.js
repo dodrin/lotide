@@ -1,8 +1,8 @@
-//FUNCTION IMPLEMENTATION
-//parameter source is an array
+//parameter 'source' is an array, 'itemsToRemove' is the items going to be removed from 'array'
 const without = (sourse, itemsToRemove) => {
+  //copy the source array and set to resultToBe
   let resultToBE = sourse;
-  //copy the source array and set to resultToBe, remove the item
+  //iterate through arrays and if the source element and itemsToRemove element is the same remove from resultToBe array
   for (let i = 0; i < sourse.length; i++) {
     for (let j = 0; j < itemsToRemove.length; j++) {
       if (sourse[i] === itemsToRemove[j]) {
@@ -12,11 +12,4 @@ const without = (sourse, itemsToRemove) => {
   }  return resultToBE;
 };
 
-// //TEST CASES
-// console.log(without([1, 2, 3], [1]));
-// console.log(without(["1", "2", "3"], [1, 2, "3"]));
-// console.log(without([2, 5, 6], []));
-
-// const words = ["hello", "world", "lighthouse"];
-// console.log(without(words, ["lighthouse"]));
 module.exports = without;
