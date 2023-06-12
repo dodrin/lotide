@@ -1,7 +1,8 @@
 const eqArrays = require("./eqArrays");
 const eqObjects = require("./eqObjects");
 
-//FUCNTION IMPLEMENTATION
+//The function takes 2 objects as parameters
+// Returns assertion message if the objects match or not
 const assertObjectsEqual = (actual, expected) => {
   const inspect = require('util').inspect;
   if (eqObjects(actual, expected)) {
