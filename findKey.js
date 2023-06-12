@@ -1,16 +1,16 @@
 const asserEqual = require("./assertEqual");
+//The function takes an object and callback function as parameters
+//Iterate over the object and return the first key for which the callback returns a truthy value
+//If no key is found then it should return undefined
 
-//FUNCTION IMPLEMENTATION
-//1. function which takes an object and a callback
 const findKey = (obj, callback) => {
-  //2. scan the object and return the first key for which the callback returns a truthy value.
   for (const key in obj) {
     if (callback(obj[key])) {
       console.log(key);
       return key;
     }
   }
-  //3. no key is found then it should return undefined
+  
   return undefined;
 };
 
