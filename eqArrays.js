@@ -1,3 +1,6 @@
+//Takes 2 arrays as parameters
+//Compare if the 2 arrays are exactly same, if the same return true otherwise false
+
 const eqArrays = (arr1, arr2) => {
   if (arr1.length !== arr2.length) {
     return false;
