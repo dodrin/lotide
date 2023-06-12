@@ -1,3 +1,5 @@
+//The function takes an array as parameter
+//It will return the middle(s) element
 const middle = (arr) => {
   const result = [];
   let mid;
