@@ -1,3 +1,5 @@
+//The function takes 2 arrays as parameter
+//Returns assertion message if they match or not
 const assertArraysEqual = function(arr1, arr2) {
   const failMsg = `😭😭Assertion Failed: ${arr1} !== ${arr2}`;
   const passMsg = `✅✅✅Assertion Passed: ${arr1} === ${arr2}`;
