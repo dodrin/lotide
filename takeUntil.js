@@ -1,6 +1,6 @@
 const assertArraysEqual = require("./assertArraysEqual");
 
-//FUNCTION IMPLEMENTATION
+//parameter 'array' takes arrays, 'callback' takes callback function 
 const takeUntil = function(array, callback) {
   const result = [];
   for (const item of array) {
